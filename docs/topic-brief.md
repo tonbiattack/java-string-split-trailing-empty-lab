@@ -33,7 +33,7 @@
 | 最終観測 | `acceptedRows()`に空メモの行が一件残り、`rejectedCount()`が`0`であることを別々に検証する。通常の非空メモ行は引き続き受理されることも検証する。 |
 | 決定性 | 時刻、乱数、ファイル、ネットワーク、並行処理、`sleep`を使わず、固定文字列とインメモリ状態だけを使う。 |
 | 固定状態の検証コマンド | `mvn --batch-mode clean test` |
-| バグ状態の確認コマンド | `git checkout <bug-commit>`後に`mvn --batch-mode test -Dtest=CsvImportServiceTest` |
+| バグ状態の確認コマンド | `git checkout 4488fb6`後に`mvn --batch-mode test -Dtest=CsvImportServiceTest` |
 
 ## 仮説
 
