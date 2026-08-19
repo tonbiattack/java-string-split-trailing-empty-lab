@@ -14,7 +14,7 @@ public class CsvImportService {
     private int rejectedCount;
 
     public ImportOutcome importLine(String line) {
-        String[] columns = line.split(",");
+        String[] columns = line.split(",", -1);
         if (columns.length != EXPECTED_COLUMN_COUNT) {
             rejectedCount++;
             return ImportOutcome.REJECTED;
